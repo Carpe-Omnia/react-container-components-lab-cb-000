@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const MovieReviews = (props) => {
   return (
-    <div className="movie reviews" >
+    <div className="review-list" >
       <h2> movie review </h2>
       {props.reviews.map((review) =>{
         <div className="review">
