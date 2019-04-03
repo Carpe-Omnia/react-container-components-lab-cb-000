@@ -11,10 +11,11 @@ class LatestMovieReviewsContainer extends React.Component {
   constructor(){
     super();
     this.state = {reviews: []}
+    var that = this;
     fetch(URL)
     .then(res => res.json())
     .then(function(json){
-      this.setState({
+      that.setState({
         reviews: json.results
       })
       console.log(json.results);
