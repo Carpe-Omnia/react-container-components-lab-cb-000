@@ -6,7 +6,6 @@ const NYT_API_KEY = 'cbTv1EzjVGRMCAAAHkopgoUnRLXkUpaG';
 const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?'
 const end = `api-key=${NYT_API_KEY}`;
 
- `query=${searchQuery}`
 class SearchableMovieReviewsContainer extends React.Component {
   constructor(){
     super();
