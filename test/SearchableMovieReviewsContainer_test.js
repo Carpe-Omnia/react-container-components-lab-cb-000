@@ -12,7 +12,6 @@ Enzyme.configure({ adapter: new Adapter() })
 const Noop = (props) => { return <p>Noop</p> };
 
 describe('<SearchableMovieReviewsContainer />', () => {
-  /*
   let wrapper;
   let fetchSpy;
 
@@ -54,5 +53,4 @@ describe('<SearchableMovieReviewsContainer />', () => {
     wrapper.update();
     expect(wrapper.find('.review').length).to.equal(testReviews.length);
   });
-  */
 });
