@@ -9,7 +9,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 
 class SearchableMovieReviewsContainer extends React.Component {
   handleSubmit(event){
-
+    event.preventDefault() ;
   }
   render(){
     return (
