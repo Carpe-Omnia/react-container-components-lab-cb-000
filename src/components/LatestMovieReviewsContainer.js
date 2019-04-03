@@ -10,7 +10,7 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 class LatestMovieReviewsContainer extends React.Component {
   constructor(){
     super();
-    this.state = {reviews: []
+    this.state = {reviews: []}
     fetch(url)
     .then(res => res.json())
     .then(function(json){
