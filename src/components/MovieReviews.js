@@ -7,3 +7,5 @@ const MovieReviews = (props) => {
     </div>
   )
 }
+
+export default MovieReviews
