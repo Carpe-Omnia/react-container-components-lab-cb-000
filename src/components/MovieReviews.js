@@ -8,4 +8,4 @@ const MovieReviews = (props) => {
   )
 }
 
-export default MovieReviews
+export default MovieReviews ;
