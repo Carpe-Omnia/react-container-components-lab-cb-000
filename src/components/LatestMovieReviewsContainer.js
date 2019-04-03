@@ -15,7 +15,7 @@ class LatestMovieReviewsContainer extends React.Component {
     .then(res => res.json())
     .then(function(json){
       this.setState({
-        reviews: json.response.data
+        reviews: json.results
       })
       console.log(json);
     })
