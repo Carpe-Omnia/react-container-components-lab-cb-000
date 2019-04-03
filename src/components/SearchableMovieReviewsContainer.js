@@ -8,6 +8,13 @@ const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
 
 
 class SearchableMovieReviewsContainer extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      searchTerm: "",
+      reviews: []
+    }
+  }
   handleSubmit(event){
     event.preventDefault() ;
   }
@@ -15,7 +22,7 @@ class SearchableMovieReviewsContainer extends React.Component {
     return (
       <div className="searchable-movie-reviews" >
         <h1>Searchable movie container </h1>
-        <MovieReviews />
+        <MovieReviews reviews={this.state.reviews}/>
         <form onSubmit={event => this.handleSubmit(event)} >
           <input type="text" />
           <input type="submit" />
