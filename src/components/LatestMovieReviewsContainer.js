@@ -3,7 +3,7 @@ import 'isomorphic-fetch';
 import MovieReviews from './MovieReviews'
 
 const NYT_API_KEY = 'cbTv1EzjVGRMCAAAHkopgoUnRLXkUpaG';
-const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
+const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?order=by-publication-date&'
             + `api-key=${NYT_API_KEY}`;
 
 // Code LatestMovieReviewsContainer Here
