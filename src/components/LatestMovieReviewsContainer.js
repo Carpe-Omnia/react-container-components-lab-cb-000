@@ -14,7 +14,10 @@ class LatestMovieReviewsContainer extends React.Component {
     fetch(URL)
     .then(res => res.json())
     .then(function(json){
-      console.log(json)
+      this.setState({
+        reviews: json.response.data
+      })
+      console.log(json);
     })
   }
   render(){
